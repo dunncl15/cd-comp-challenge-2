@@ -12,8 +12,12 @@ body {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   font-size: 1em;
+  background-image: url("http://wallpapercave.com/wp/qd96rH3.jpg");
+  background-position: bottom;
+  background-size: cover;
+  /*background-repeat: no-repeat;*/
 }
 
 header {
@@ -37,34 +41,10 @@ nav {
 .wrapper {
   width: 100%;
   height: 100%;
-  position: relative;
-  background-image: url("images/american-flag.jpg");
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat;
-  /*opacity: 0.66;*/
 }
-
-/** Background opacity hack **/
-
-/*.wrapper::after {
-  content: "";
-  background-image: url("images/american-flag.jpg");
-  background-position: top;
-  background-size: contain;
-  background-repeat: no-repeat;
-  opacity: 0.66;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
-}*/
 
 .mobile-menu {
   background-color: #212D53;
-  /*background-color: #283792;*/
   padding: 10px 0;
 }
 
@@ -109,7 +89,71 @@ nav {
 }
 
 .player-card {
-  margin: 10px 0;
-  padding: 10px 0;
+  margin: 10px;
+  min-width: 250px;
+  max-width: 400px;
   background-color: #fff;
+}
+
+/**** Player Card Styles ****/
+
+.inner-content {
+  display: flex;
+  padding: 10px 15px;
+  align-items: center;
+}
+
+.headshot-wrap {
+  margin-right: 15px;
+  padding: 10px;
+}
+
+.headshot {
+  height: 125px;
+  width: 125px;
+  border: 3px solid #ECEEED;
+  border-radius: 50%;
+}
+
+.category {
+  margin: 0;
+  padding: 2.5px 0;
+  background-color: #ECEEED;
+  color: #5E5E5E;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.stat-number {
+  margin: 10px 0 -10px -10px;
+  color: #538CB7;
+  font-size: 4em;
+}
+
+.primary-stat {
+  margin: 0;
+  color: #7C9CA9;
+}
+
+.secondary-stat {
+  margin: 0;
+  color: #5E5E5E;
+}
+
+.name {
+  margin: 0;
+  padding: 5px 0;
+  border-top: 1px solid #ECEEED;
+  color: #5E5E5E;
+  text-align: center;
+}
+
+.last-name {
+  text-transform: uppercase;
+}
+
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
 }
