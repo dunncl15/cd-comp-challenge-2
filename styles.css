@@ -86,7 +86,7 @@ h3 {
 }
 
 .icon {
-  display: inline-block;
+  display: none;
   margin-right: 25px;
   height: 25px;
   width: 25px;
@@ -243,6 +243,10 @@ footer h3 {
 
   h1 {
     font-size: 2em;
+  }
+
+  .icon {
+    display: unset;
   }
 
   .ad {
